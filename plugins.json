@@ -1,5 +1,20 @@
 [
-    
+   
+    {
+        "iconUrl": "https://clouding.vn/wp-content/uploads/2022/10/cropped-Cloud-Services-192x192.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize": 42324,
+        "status": 1,
+        "authors": [
+            "anhdaden", "RowdyRushya"
+        ],
+        "version": 9,
+        "internalName": "SyncProvider",
+        "description": "\u0110\u1ed3ng b\u1ed9 c\u00e0i \u0111\u1eb7t v\u00e0 l\u1ecbch s\u1eed xem gi\u1eefa c\u00e1c thi\u1ebft b\u1ecb",
+        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/SyncProvider.cs3",
+        "name": "Cross-Device Sync"
+    }, 
     {
         "iconUrl": "https://play-lh.googleusercontent.com/TOTj0uMWp7cXkjXDXkcTZnPigUmpLRRiH956lHRJxStlY7ucxmtwMs_Kr2wOWYm0fSY=w240-h480-rw",
         "apiVersion": 1,
