@@ -17,7 +17,7 @@
         "version": 30,
         "internalName": "FshareProvider",
         "description": "Download FullHD, 2K, 4K with Fshare Vip account",
-        "url": "FshareProvider.cs3",
+        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/FshareProvider.cs3",
         "name": "FshareProvider"
     },
     {
