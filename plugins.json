@@ -1,0 +1,102 @@
+[
+    
+    {
+        "iconUrl": "https://play-lh.googleusercontent.com/TOTj0uMWp7cXkjXDXkcTZnPigUmpLRRiH956lHRJxStlY7ucxmtwMs_Kr2wOWYm0fSY=w240-h480-rw",
+        "apiVersion": 1,
+        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize": 118820,
+        "status": 1,
+        "authors": [
+            "anhdaden"
+        ],
+        "tvTypes": [
+            "Anime",
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 30,
+        "internalName": "FshareProvider",
+        "description": "Download FullHD, 2K, 4K with Fshare Vip account",
+        "url": "FshareProvider.cs3",
+        "name": "FshareProvider"
+    },
+    {
+        "iconUrl": "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
+        "apiVersion": 1,
+        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize": 30703,
+        "status": 1,
+        "authors": [
+            "anhdaden"
+        ],
+        "tvTypes": [
+            "Live"
+        ],
+        "version": 9,
+        "internalName": "IPTVProvider",
+        "description": "C\u1ea7n nh\u1eadp link IPTV \u0111\u1ec3 xem",
+        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/IPTVProvider.cs3",
+        "name": "IPTVProvider"
+    },
+    {
+        "iconUrl": "https://monplayer.org/images/favicon.ico",
+        "apiVersion": 1,
+        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize": 55806,
+        "status": 1,
+        "authors": [
+            "anhdaden"
+        ],
+        "tvTypes": [
+            "Others"
+        ],
+        "version": 9,
+        "internalName": "MonPlayerProvider",
+        "description": "Dùng được những link ghim trên nhóm tele",
+        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/MonPlayerProvider.cs3",
+        "name": "MonPlayerProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=uncutmaza.cc&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize": 174937,
+        "status": 1,
+        "authors": [
+            "anhdaden",
+            "hexated"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Anime",
+            "Movie"
+        ],
+        "version": 32,
+        "internalName": "ViStreamProvider",
+        "description": "Download FullHD, 2K, 4K from torrent and cloud driver",
+        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/ViStreamProvider.cs3",
+        "name": "ViStreamProvider"
+    },
+
+    {
+        "iconUrl": "https://www.stremio.com/website/favicon.ico",
+        "apiVersion": 1,
+        "repositoryUrl": "https://codeberg.org/frezza147/test",
+        "fileSize": 109635,
+        "status": 1,
+        "authors": [
+            "anhdaden",
+            "hexated"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Anime",
+            "Movie"
+        ],
+        "version": 5,
+        "internalName": "StremioProvider",
+        "description": "Addon use Streamio",
+        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/StremioProvider.cs3",
+        "name": "StremioProvider"
+    }
+]
