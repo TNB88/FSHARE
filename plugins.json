@@ -89,7 +89,7 @@
         "version": 32,
         "internalName": "ViStreamProvider",
         "description": "Download FullHD, 2K, 4K from torrent and cloud driver",
-        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/ViStreamProvider.cs3",
+        "url": "https://github.com/TNB88/FSHARE/raw/refs/heads/main/ViStreamProvider.cs3",
         "name": "ViStreamProvider"
     },
 
