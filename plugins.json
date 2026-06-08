@@ -89,7 +89,7 @@
         "version": 32,
         "internalName": "ViStreamProvider",
         "description": "Download FullHD, 2K, 4K from torrent and cloud driver",
-        "url": "https://github.com/TNB88/FSHARE/raw/refs/heads/main/ViStreamProvider.cs3",
+        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/ViStreamProvider.cs",
         "name": "ViStreamProvider"
     },
 
@@ -111,7 +111,7 @@
         "version": 5,
         "internalName": "StremioProvider",
         "description": "Addon use Streamio",
-        "url": "https://github.com/TNB88/FSHARE/raw/refs/heads/main/StremioProvider.cs3",
+        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/StremioProvider.cs",
         "name": "StremioProvider"
     }
 ]
