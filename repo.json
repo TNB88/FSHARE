@@ -3,6 +3,7 @@
     "description": "https://t.me/cloudstream_extension_vn",
     "manifestVersion": 1,
     "pluginLists": [
-      "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/plugins.json"
+      "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/plugins.json",
+      "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/plugins.json"
     ]
 }
