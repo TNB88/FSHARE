@@ -1,0 +1,8 @@
+{
+    "name":  "Vietnamese Extension ShowSource 2",
+    "description":  "Baseline test: FilmFree sources appear before link-fix changes",
+    "manifestVersion":  1,
+    "pluginLists":  [
+                        "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/plugins_show2.json"
+                    ]
+}
