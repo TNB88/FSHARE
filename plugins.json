@@ -1,98 +1,312 @@
 [
-   
     {
-        "iconUrl": "https://clouding.vn/wp-content/uploads/2022/10/cropped-Cloud-Services-192x192.png",
-        "apiVersion": 1,
-        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize": 42324,
-        "status": 1,
-        "authors": [
-            "Bình Pro"
-        ],
-        "version": 9,
-        "internalName": "SyncProvider",
-        "description": "\u0110\u1ed3ng b\u1ed9 c\u00e0i \u0111\u1eb7t v\u00e0 l\u1ecbch s\u1eed xem gi\u1eefa c\u00e1c thi\u1ebft b\u1ecb",
-        "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/SyncProvider.cs3",
-        "name": "Cross-Device Sync"
-    }, 
-    {
-        "iconUrl": "https://play-lh.googleusercontent.com/TOTj0uMWp7cXkjXDXkcTZnPigUmpLRRiH956lHRJxStlY7ucxmtwMs_Kr2wOWYm0fSY=w240-h480-rw",
-        "apiVersion": 1,
-        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize": 118820,
-        "status": 1,
-        "authors": [
-            "Bình pro"
-        ],
-        "tvTypes": [
-            "Anime",
-            "TvSeries",
-            "Movie"
-        ],
-        "version": 30,
-        "internalName": "FshareProvider",
-        "description": "Download FullHD, 2K, 4K with Fshare Vip account",
-        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/FshareProvider.cs3",
-        "name": "FshareProvider"
+        "iconUrl":  "https://clouding.vn/wp-content/uploads/2022/10/cropped-Cloud-Services-192x192.png",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize":  42324,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "version":  9,
+        "internalName":  "SyncProvider",
+        "description":  "Đồng bộ cài đặt và lịch sử xem giữa các thiết bị",
+        "url":  "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/SyncProvider.cs3",
+        "name":  "Cross-Device Sync"
     },
     {
-        "iconUrl": "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
-        "apiVersion": 1,
-        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize": 30703,
-        "status": 1,
-        "authors": [
-            "Bình Pro"
-        ],
-        "tvTypes": [
-            "Live"
-        ],
-        "version": 9,
-        "internalName": "IPTVProvider",
-        "description": "C\u1ea7n nh\u1eadp link IPTV \u0111\u1ec3 xem",
-        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/IPTVProvider.cs3",
-        "name": "IPTVProvider"
+        "iconUrl":  "https://play-lh.googleusercontent.com/TOTj0uMWp7cXkjXDXkcTZnPigUmpLRRiH956lHRJxStlY7ucxmtwMs_Kr2wOWYm0fSY=w240-h480-rw",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize":  118820,
+        "status":  1,
+        "authors":  [
+                        "Bình pro"
+                    ],
+        "tvTypes":  [
+                        "Anime",
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "version":  30,
+        "internalName":  "FshareProvider",
+        "description":  "Download FullHD, 2K, 4K with Fshare Vip account",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/FshareProvider.cs3",
+        "name":  "FshareProvider"
     },
-    
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=uncutmaza.cc&sz=%size%",
-        "apiVersion": 1,
-        "repositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize": 174937,
-        "status": 1,
-        "authors": [
-            "Bình Pro"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Anime",
-            "Movie"
-        ],
-        "version": 32,
-        "internalName": "ViStreamProvider",
-        "description": "Download FullHD, 2K, 4K from torrent and cloud driver",
-        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/ViStreamProvider.cs3",
-        "name": "ViStreamProvider"
+        "iconUrl":  "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize":  30703,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "Live"
+                    ],
+        "version":  9,
+        "internalName":  "IPTVProvider",
+        "description":  "Cần nhập link IPTV để xem",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/IPTVProvider.cs3",
+        "name":  "IPTVProvider"
     },
-
     {
-        "iconUrl": "https://www.stremio.com/website/favicon.ico",
-        "apiVersion": 1,
-        "repositoryUrl": "https://codeberg.org/frezza147/test",
-        "fileSize": 109635,
-        "status": 1,
-        "authors": [
-            "Bình Pro"
-        ],
-        "tvTypes": [
-            "TvSeries",
-            "Anime",
-            "Movie"
-        ],
-        "version": 5,
-        "internalName": "StremioProvider",
-        "description": "Addon use Streamio",
-        "url": "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/StremioProvider.cs3",
-        "name": "StremioProvider"
+        "iconUrl":  "https://www.google.com/s2/favicons?domain=uncutmaza.cc\u0026sz=%size%",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
+        "fileSize":  174937,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "TvSeries",
+                        "Anime",
+                        "Movie"
+                    ],
+        "version":  32,
+        "internalName":  "ViStreamProvider",
+        "description":  "Download FullHD, 2K, 4K from torrent and cloud driver",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/ViStreamProvider.cs3",
+        "name":  "ViStreamProvider"
+    },
+    {
+        "iconUrl":  "https://www.stremio.com/website/favicon.ico",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://codeberg.org/frezza147/test",
+        "fileSize":  109635,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "TvSeries",
+                        "Anime",
+                        "Movie"
+                    ],
+        "version":  5,
+        "internalName":  "StremioProvider",
+        "description":  "Addon use Streamio",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/StremioProvider.cs3",
+        "name":  "StremioProvider"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/AnimeHayProvider.cs3",
+        "status":  1,
+        "version":  21,
+        "name":  "AnimeHayProvider",
+        "internalName":  "AnimeHayProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "fileSize":  43947,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/animehay.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-3d8c8370d7cbe9d8c4df830dac331add82c4f0de779d917669f4c739ddb55413"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/BluPhimProvider.cs3",
+        "status":  1,
+        "version":  27,
+        "name":  "BluPhimProvider",
+        "internalName":  "BluPhimProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "description":  "FullHD",
+        "fileSize":  50528,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/bluphim.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-35a6be31c16c0253d757bb14b414eaabe4ef2d0d3603358b5f687621537cad7b"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/HHTQProvider.cs3",
+        "status":  1,
+        "version":  6,
+        "name":  "HHTQProvider",
+        "internalName":  "HHTQProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "description":  "Hoáº¡t hÃ¬nh Trung Quá»‘c vietsub",
+        "fileSize":  41991,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime",
+                        "AnimeMovie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/hhtq.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-ce723fb5641790acb1eb3e6b388f84226638e84ef35f059660ff1601589b369e"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/KKPhimProvider.cs3",
+        "status":  1,
+        "version":  16,
+        "name":  "KKPhimProvider",
+        "internalName":  "KKPhimProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "fileSize":  58044,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime",
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/kkphim.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-a14ca9a5add097c39b16163ce8d3e20fbcb8c26cf1a549267b8c41b336f832b1"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/NguonCProvider.cs3",
+        "status":  1,
+        "version":  23,
+        "name":  "NguonCProvider",
+        "internalName":  "NguonCProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "fileSize":  65100,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime",
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/nguonc.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-707d8d3792705b5d21588977274c1d28042a59d8f52047073ea67f5dd1415f6f"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/OPhimProvider.cs3",
+        "status":  1,
+        "version":  16,
+        "name":  "OPhimProvider",
+        "internalName":  "OPhimProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "fileSize":  57459,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime",
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/ophim.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-6f05c0232a52bf2f48a4970dd32ae821d034fb1ce11cccb3ce8006687980c428"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/PhimHDCProvider.cs3",
+        "status":  1,
+        "version":  15,
+        "name":  "PhimHDCProvider",
+        "internalName":  "PhimHDCProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "description":  "FullHD",
+        "fileSize":  49170,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/phimhdc.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-31d4985bf90e61f8d6e2e407af9ec62f5b15641a12f2cbb05120af66c0c8f917"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/PhimLongTiengProvider.cs3",
+        "status":  1,
+        "version":  22,
+        "name":  "PhimLongTiengProvider",
+        "internalName":  "PhimLongTiengProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "description":  "Phim TVB, phim xÆ°a",
+        "fileSize":  40196,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/phimlongtieng.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-b33683b22973c6bb7afc93eebd7cd1a60c624e8a14e2e463f8cc442ea47b27bf"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/Xem8zProvider.cs3",
+        "status":  1,
+        "version":  8,
+        "name":  "Xem8zProvider",
+        "internalName":  "Xem8zProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "fileSize":  36400,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/xem8z.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-1df3b83152fff08b0c42a2f0604a653821b34c7f6aea6d2df49a2ee4ed2446b2"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/YumeiAnimeProvider.cs3",
+        "status":  1,
+        "version":  5,
+        "name":  "YumeiAnimeProvider",
+        "internalName":  "YumeiAnimeProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "description":  "Pokemon vÃ  super sentai",
+        "fileSize":  36794,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime",
+                        "AnimeMovie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/yumeianime.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-aa5bb603cc29cbcb16ea72c51ba02496f0634b726875452ff8ec87d6d6461872"
+    },
+    {
+        "url":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/YanHH3DProvider.cs3",
+        "status":  1,
+        "version":  31,
+        "name":  "YanHH3DProvider",
+        "internalName":  "YanHH3DProvider",
+        "authors":  [
+                        "anhdaden"
+                    ],
+        "description":  "Hoáº¡t hÃ¬nh Trung Quá»‘c thuyáº¿t minh",
+        "fileSize":  53207,
+        "repositoryUrl":  "https://t.me/cs3vn",
+        "tvTypes":  [
+                        "Anime",
+                        "AnimeMovie"
+                    ],
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FilmFree/refs/heads/main/icon/yanhh3d.ico",
+        "apiVersion":  1,
+        "fileHash":  "sha256-336ca7259898e15a05560393609789f62f981e7cb9b8523cf3f97e5bd5dc5216"
     }
 ]
