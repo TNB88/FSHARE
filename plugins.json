@@ -6,11 +6,11 @@
         "fileSize":  42609,
         "status":  1,
         "authors":  [
-                        "BÃƒÂ¬nh Pro"
+                        "Bình Pro"
                     ],
         "version":  10,
         "internalName":  "SyncProvider",
-        "description":  "Ã„ÂÃ¡Â»â€œng bÃ¡Â»â„¢ cÃƒÂ i Ã„â€˜Ã¡ÂºÂ·t vÃƒÂ  lÃ¡Â»â€¹ch sÃ¡Â»Â­ xem giÃ¡Â»Â¯a cÃƒÂ¡c thiÃ¡ÂºÂ¿t bÃ¡Â»â€¹",
+        "description":  "",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/SyncProvider.cs3",
         "name":  "Cross-Device Sync",
         "fileHash":  "sha256-df7a5993758b54011d707df0eb3791f73dad249d6a213574c87095014bb1b957"
@@ -43,14 +43,14 @@
         "fileSize":  32573,
         "status":  1,
         "authors":  [
-                        "BÃƒÂ¬nh Pro"
+                        "Bình Pro"
                     ],
         "tvTypes":  [
                         "Live"
                     ],
         "version":  10,
         "internalName":  "IPTVProvider",
-        "description":  "CÃ¡ÂºÂ§n nhÃ¡ÂºÂ­p link IPTV Ã„â€˜Ã¡Â»Æ’ xem",
+        "description":  "Nhập Link Để Xem IPTV",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/IPTVProvider.cs3",
         "name":  "IPTVProvider",
         "fileHash":  "sha256-6429624578fc27071b0fd47d661ea3635de3bdb0efab82eafdb51da3514efc0f"
@@ -62,7 +62,7 @@
         "fileSize":  309961,
         "status":  1,
         "authors":  [
-                        "BÃƒÂ¬nh Pro"
+                        "Bình Pro"
                     ],
         "tvTypes":  [
                         "TvSeries",
@@ -83,7 +83,7 @@
         "fileSize":  130314,
         "status":  1,
         "authors":  [
-                        "BÃƒÂ¬nh Pro"
+                        "Bình Pro"
                     ],
         "tvTypes":  [
                         "TvSeries",
