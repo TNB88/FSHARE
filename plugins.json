@@ -6,7 +6,7 @@
         "fileSize":  42609,
         "status":  1,
         "authors":  [
-                        "Bình Pro"
+                        "BÃ¬nh Pro"
                     ],
         "version":  10,
         "internalName":  "SyncProvider",
@@ -22,7 +22,7 @@
         "fileSize":  175824,
         "status":  1,
         "authors":  [
-                        "Bình Pro"
+                        "BÃ¬nh Pro"
                     ],
         "tvTypes":  [
                         "Anime",
@@ -43,14 +43,14 @@
         "fileSize":  32573,
         "status":  1,
         "authors":  [
-                        "Bình Pro"
+                        "BÃ¬nh Pro"
                     ],
         "tvTypes":  [
                         "Live"
                     ],
         "version":  10,
         "internalName":  "IPTVProvider",
-        "description":  "Nhập Link Để Xem IPTV",
+        "description":  "Nháº­p Link Äá»ƒ Xem IPTV",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/IPTVProvider.cs3",
         "name":  "IPTVProvider",
         "fileHash":  "sha256-6429624578fc27071b0fd47d661ea3635de3bdb0efab82eafdb51da3514efc0f"
@@ -59,7 +59,7 @@
         "iconUrl":  "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  29046,
+        "fileSize":  29049,
         "status":  1,
         "authors":  [
                         "Binh Pro"
@@ -67,12 +67,12 @@
         "tvTypes":  [
                         "Live"
                     ],
-        "version":  2,
+        "version":  3,
         "internalName":  "XtreamIPTVProvider",
         "description":  "Xtream IPTV login with server, username and password",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/main/XtreamIPTVProvider.cs3",
         "name":  "Xtream IPTV",
-        "fileHash":  "sha256-c20a6106f339ece829089000bc9bb1940d083a708061f1af3e68e984d36b477f"
+        "fileHash":  "sha256-63cbaf045238ee2bfe9f7792eb7cf24eff375ff78a1002c995c3164a3be7b356"
     },
     {
         "iconUrl":  "https://www.google.com/s2/favicons?domain=uncutmaza.cc\u0026sz=%size%",
@@ -81,7 +81,7 @@
         "fileSize":  309961,
         "status":  1,
         "authors":  [
-                        "Bình Pro"
+                        "BÃ¬nh Pro"
                     ],
         "tvTypes":  [
                         "TvSeries",
@@ -102,7 +102,7 @@
         "fileSize":  130314,
         "status":  1,
         "authors":  [
-                        "Bình Pro"
+                        "BÃ¬nh Pro"
                     ],
         "tvTypes":  [
                         "TvSeries",
