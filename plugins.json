@@ -59,7 +59,7 @@
         "iconUrl":  "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  29049,
+        "fileSize":  29053,
         "status":  1,
         "authors":  [
                         "Binh Pro"
@@ -67,12 +67,12 @@
         "tvTypes":  [
                         "Live"
                     ],
-        "version":  3,
+        "version":  4,
         "internalName":  "XtreamIPTVProvider",
         "description":  "Xtream IPTV login with server, username and password",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/main/XtreamIPTVProvider.cs3",
         "name":  "Xtream IPTV",
-        "fileHash":  "sha256-63cbaf045238ee2bfe9f7792eb7cf24eff375ff78a1002c995c3164a3be7b356"
+        "fileHash":  "sha256-a34bf00e6ad9ea7df80f4acf64926bd7b194b3692387b91d043b711e1bfad0d3"
     },
     {
         "iconUrl":  "https://www.google.com/s2/favicons?domain=uncutmaza.cc\u0026sz=%size%",
