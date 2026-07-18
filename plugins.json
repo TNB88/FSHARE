@@ -120,7 +120,7 @@
         "iconUrl":  "https://www.google.com/s2/favicons?domain=api.phim4k.dpdns.org&sz=256",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  36121,
+        "fileSize":  38157,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -129,11 +129,11 @@
                         "TvSeries",
                         "Movie"
                     ],
-        "version":  1,
+        "version":  2,
         "internalName":  "PhimNetProvider",
         "description":  "Server Nét gốc - chọn riêng 1080p/4K, HDR/DV và dung lượng GB",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/PhimNetProvider.cs3",
         "name":  "PhimNetProvider",
-        "fileHash":  "sha256-ee41c96c4c81b529992f6625a014c1a5b6094ac2f6cbd15831c0f475e2e5a684"
+        "fileHash":  "sha256-a0c82f1c118047389dfd5edbb5dbeb4d6d5956b27271e82f5c591b76404e1447"
     }
 ]
