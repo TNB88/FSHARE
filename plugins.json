@@ -115,5 +115,25 @@
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/StremioProvider.cs3",
         "name":  "StremioProvider",
         "fileHash":  "sha256-4c76696afe6d13380396ffa27ab010f7f524724754dd64effdca9bf265c1f52c"
+    },
+    {
+        "iconUrl":  "https://www.google.com/s2/favicons?domain=api.phim4k.dpdns.org&sz=256",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
+        "fileSize":  36121,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "TvSeries",
+                        "Movie"
+                    ],
+        "version":  1,
+        "internalName":  "PhimNetProvider",
+        "description":  "Server Nét gốc - chọn riêng 1080p/4K, HDR/DV và dung lượng GB",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/PhimNetProvider.cs3",
+        "name":  "PhimNetProvider",
+        "fileHash":  "sha256-ee41c96c4c81b529992f6625a014c1a5b6094ac2f6cbd15831c0f475e2e5a684"
     }
 ]
