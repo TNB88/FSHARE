@@ -29,12 +29,12 @@
                         "TvSeries",
                         "Movie"
                     ],
-        "version":  54,
+        "version":  55,
         "internalName":  "FshareProvider",
         "description":  "Download FullHD, 2K, 4K with Fshare Vip account",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/FshareProvider.cs3",
         "name":  "FshareProvider",
-        "fileHash":  "sha256-b17bb9b434c1d818c18c94cbd37ea9703bb541199954ed813b499da757d4cac9"
+        "fileHash":  "sha256-964c82a00bcbaa74cf0dbaaa380e5c04920a1ff80a121bafdbbcf160bfdedd21"
     },
     {
         "iconUrl":  "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
