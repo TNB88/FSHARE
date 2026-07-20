@@ -117,7 +117,7 @@
         "fileHash":  "sha256-4c76696afe6d13380396ffa27ab010f7f524724754dd64effdca9bf265c1f52c"
     },
     {
-        "iconUrl":  "https://www.google.com/s2/favicons?domain=api.phim4k.dpdns.org&sz=256",
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/phimnet-icon.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
         "fileSize":  39230,
