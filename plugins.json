@@ -140,7 +140,7 @@
         "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/CinePro-icon.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  35187,
+        "fileSize":  37022,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -149,11 +149,11 @@
                         "TvSeries",
                         "Movie"
                     ],
-        "version":  2,
+        "version":  3,
         "internalName":  "CineProProvider",
-        "description":  "Cine Pro - phim 1080p/4K, chọn riêng từng phiên bản và dung lượng",
+        "description":  "Cine Pro - phim 1080p/4K, chọn nguồn và nhận phụ đề Cinehay nội bộ",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/CineProProvider.cs3",
         "name":  "Cine Pro",
-        "fileHash":  "sha256-3e6d2be80f4bf2a3b28f249ad2b690a450d8b194e70d57753a1c4eeb74758020"
+        "fileHash":  "sha256-06a35522037732f5b38494d86fe51032b7c6a90c803d09f77592fac95be62200"
     }
 ]
