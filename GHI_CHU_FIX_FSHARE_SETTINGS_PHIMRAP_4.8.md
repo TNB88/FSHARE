@@ -118,3 +118,13 @@ Sau khi đóng gói, luôn xác nhận ba giá trị trong `plugins.json` khớp
 - Version: `58`
 - File size: `176545` bytes
 - SHA-256: `1752891f94fd1b6226d476898315745a573a2ebb14c19333cc0fdbf9da38f777`
+
+## Kết quả xác nhận trực tiếp trên PhimRap 4.8.0
+
+- Repository nhận đúng Fshare `v58`, hiển thị kích thước làm tròn `177 kB`.
+- Đã đóng hộp thoại Safe Mode và khởi động sạch ứng dụng; không xóa dữ liệu PhimRap.
+- Bấm bánh răng Fshare mở được `Fshare Settings` với đủ các mục Login, Add folder, List folder, List provider và Check account.
+- Bấm Login mở được hộp thoại `Login Fshare`.
+- Ba ô Username, Password và Mã đăng nhập VIP đều `enabled=true`, `focusable=true`.
+- Đã đặt con trỏ vào Username và bàn phím Android hiện bình thường; không nhập hoặc ghi lại thông tin tài khoản người dùng.
+- Logcat sạch sau khi mở Settings và Login: không còn `Resource ID #0x0`, `Resources$NotFoundException`, `FATAL EXCEPTION` hoặc crash từ `FshareSettingsFragment`.
