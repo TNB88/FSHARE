@@ -19,7 +19,7 @@
         "iconUrl":  "https://play-lh.googleusercontent.com/TOTj0uMWp7cXkjXDXkcTZnPigUmpLRRiH956lHRJxStlY7ucxmtwMs_Kr2wOWYm0fSY=w240-h480-rw",
         "apiVersion":  1,
         "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize":  166525,
+        "fileSize":  176545,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -29,12 +29,12 @@
                         "TvSeries",
                         "Movie"
                     ],
-        "version":  57,
+        "version":  58,
         "internalName":  "FshareProvider",
         "description":  "Download FullHD, 2K, 4K with Fshare Vip account",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/FshareProvider.cs3",
         "name":  "FshareProvider",
-        "fileHash":  "sha256-50c0a1a41c0b32a0da8253d46cb344ba1973cf74c4739c5cdbde50d76e150f7e"
+        "fileHash":  "sha256-1752891f94fd1b6226d476898315745a573a2ebb14c19333cc0fdbf9da38f777"
     },
     {
         "iconUrl":  "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
