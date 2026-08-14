@@ -120,7 +120,7 @@
         "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/phimnet-icon.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  38799,
+        "fileSize":  38765,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -129,12 +129,12 @@
                         "TvSeries",
                         "Movie"
                     ],
-        "version":  5,
+        "version":  6,
         "internalName":  "PhimNetProvider",
         "description":  "Server Nét gốc - chọn riêng 1080p/4K, HDR/DV và dung lượng GB",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/PhimNetProvider.cs3",
         "name":  "PhimNetProvider",
-        "fileHash":  "sha256-686ffa65259fb86cf54780607e725aa47757d99a0e36b15084adf72144ffd4ae"
+        "fileHash":  "sha256-66576e2af0ecb77232ebf5f2c9e71c56724f63e58f3794ceead3be2bdbf30c83"
     },
     {
         "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/CinePro-icon.png",
