@@ -155,5 +155,50 @@
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/CineProProvider.cs3",
         "name":  "Cine Pro",
         "fileHash":  "sha256-86d9012373e5bab56a50af3aa8be460afdb685d9b3f2c774cc3e46ac0e3b44ea"
+    },
+    {
+        "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://github.com/phisher98/cloudstream-extensions-phisher",
+        "fileSize":  192127,
+        "status":  1,
+        "authors":  [
+                        "Phisher98"
+                    ],
+        "tvTypes":  [
+                        "Movie",
+                        "Torrent",
+                        "AsianDrama",
+                        "TvSeries",
+                        "Anime"
+                    ],
+        "version":  92,
+        "internalName":  "TorraStream",
+        "description":  "TorraStream v92 nguyên gốc - gồm TorraStream (TMDB) và TorraStream-Anime, hỗ trợ torrent 4K và Debrid",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStream.cs3",
+        "name":  "TorraStream",
+        "fileHash":  "sha256-e6f6a4d9910dbc4b775d7ddafb6c3a262e31942a430d853b5a41a392205450f8"
+    },
+    {
+        "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
+        "fileSize":  12404,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "Torrent",
+                        "Movie",
+                        "TvSeries",
+                        "Anime"
+                    ],
+        "version":  1,
+        "internalName":  "TorraStreamQuickCode",
+        "description":  "Nhập mã nhanh để cấu hình TorBox hoặc Real-Debrid cho TorraStream và TorraStream-Anime",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStreamQuickCode.cs3",
+        "name":  "TorraStream QuickCode",
+        "fileHash":  "sha256-05336eda5583c8d924e2f9265edf132befe792a76ff5c9c5e24822b13fe152d3"
     }
 ]

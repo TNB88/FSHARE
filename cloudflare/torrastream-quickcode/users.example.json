@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "users": {
+    "thay-bang-ma-dai-ngau-nhien": {
+      "real_debrid": "DAN_API_KEY_REAL_DEBRID_MOI_VAO_DAY",
+      "torbox": "DAN_API_KEY_TORBOX_MOI_VAO_DAY"
+    }
+  }
+}
