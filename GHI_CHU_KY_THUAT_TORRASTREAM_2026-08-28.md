@@ -27,6 +27,7 @@ Worker đọc cấu hình từ Cloudflare Worker Secret `USER_CONFIG_JSON`. Khô
 - Plugin v2 ẩn hoàn toàn URL Worker khỏi giao diện, timeout kết nối/đọc 10 giây và xóa ô mã sau khi áp dụng.
 - Khi mã được áp dụng thành công, trường API key trong cài đặt TorraStream được ẩn để người dùng khác không đọc hoặc sao chép được.
 - Giao diện hiển thị thông tin hỗ trợ: Bình Pro — Zalo 0907 657 980.
+- Kiểm thử ADB trên Phim Rạp tại `192.168.1.21`: QuickCode v2 cài thành công; giao diện không còn ô URL Worker; mã `ti` báo đã cấu hình TorBox cho TorraStream và TorraStream-Anime; mở lại TorraStream Settings không còn hiển thị `Enter API Key / URL`/`debrid_key_input`; không ghi nhận crash AndroidRuntime.
 
 ## SHA-256
 
