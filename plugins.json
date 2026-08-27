@@ -183,7 +183,7 @@
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  12404,
+        "fileSize":  13547,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -194,11 +194,11 @@
                         "TvSeries",
                         "Anime"
                     ],
-        "version":  1,
+        "version":  2,
         "internalName":  "TorraStreamQuickCode",
-        "description":  "Nhập mã nhanh để cấu hình TorBox hoặc Real-Debrid cho TorraStream và TorraStream-Anime",
+        "description":  "Nhập mã nhanh TorBox/Real-Debrid, ẩn URL Worker và API key trong cài đặt TorraStream",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStreamQuickCode.cs3",
         "name":  "TorraStream QuickCode",
-        "fileHash":  "sha256-05336eda5583c8d924e2f9265edf132befe792a76ff5c9c5e24822b13fe152d3"
+        "fileHash":  "sha256-ad37ca941849f74f847173460858cc01383d637d81b8fce74da6fe52dd99f97e"
     }
 ]

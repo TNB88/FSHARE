@@ -3,7 +3,7 @@
 ## Thành phần phát hành
 
 - `TorraStream.cs3`: bản v92 nguyên gốc từ `phisher98/cloudstream-extensions-phisher`; trong cùng gói có TorraStream (TMDB) và TorraStream-Anime.
-- `TorraStreamQuickCode.cs3`: plugin companion v1 để nhập mã và ghi cấu hình Debrid dùng chung của hai nguồn.
+- `TorraStreamQuickCode.cs3`: plugin companion v2 để nhập mã và ghi cấu hình Debrid dùng chung của hai nguồn.
 - Worker: `https://torrastream-quickcode.tongbinhnguyen9090.workers.dev`
 - Cloudflare Worker Version ID: `b7f473b8-fdb2-4709-bacb-2b5856271190`.
 
@@ -24,12 +24,14 @@ Worker đọc cấu hình từ Cloudflare Worker Secret `USER_CONFIG_JSON`. Khô
 - Ba mã TorBox hiện tại: trả provider `TorBox`, key đúng định dạng UUID; giá trị key không được in vào log kiểm thử.
 - Mã không tồn tại: HTTP 404.
 - `TorraStreamQuickCode.cs3` giải nén hợp lệ, manifest nhận class `com.tnb88.torrastreamquickcode.TorraStreamQuickCodePlugin` và JADX đọc được `classes.dex`.
-- Plugin có sẵn URL Worker, timeout kết nối/đọc 10 giây, chỉ chấp nhận HTTPS và xóa ô mã sau khi áp dụng.
+- Plugin v2 ẩn hoàn toàn URL Worker khỏi giao diện, timeout kết nối/đọc 10 giây và xóa ô mã sau khi áp dụng.
+- Khi mã được áp dụng thành công, trường API key trong cài đặt TorraStream được ẩn để người dùng khác không đọc hoặc sao chép được.
+- Giao diện hiển thị thông tin hỗ trợ: Bình Pro — Zalo 0907 657 980.
 
 ## SHA-256
 
 - `TorraStream.cs3`: `e6f6a4d9910dbc4b775d7ddafb6c3a262e31942a430d853b5a41a392205450f8` (192127 byte).
-- `TorraStreamQuickCode.cs3`: `05336eda5583c8d924e2f9265edf132befe792a76ff5c9c5e24822b13fe152d3` (12404 byte).
+- `TorraStreamQuickCode.cs3` v2: `ad37ca941849f74f847173460858cc01383d637d81b8fce74da6fe52dd99f97e` (13547 byte).
 
 ## Bảo mật và vận hành
 

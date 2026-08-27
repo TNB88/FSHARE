@@ -8,7 +8,7 @@ Worker nhận `POST /v1/resolve`, tra mã cá nhân trong secret `USER_CONFIG_JS
 2. Nên đổi mọi API key từng bị chia sẻ và tạo mã ngẫu nhiên dài tối thiểu 12 ký tự cho từng người.
 3. Chạy `npx wrangler secret put USER_CONFIG_JSON` trong thư mục này, rồi dán JSON thật theo cấu trúc `users.example.json`.
 4. Chạy `npx wrangler deploy`.
-5. Trong cài đặt plugin **TorraStream QuickCode**, giữ URL đã điền sẵn, chọn TorBox hoặc RealDebrid và nhập mã cá nhân.
+5. Trong cài đặt plugin **TorraStream QuickCode**, chọn TorBox hoặc RealDebrid và nhập mã cá nhân. URL Worker đã được nhúng và không hiển thị trong giao diện.
 
 Kiểm tra không lộ khóa:
 

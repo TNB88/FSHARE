@@ -18,7 +18,7 @@ import java.net.URL
 class QuickCodeFragment(
     private val plugin: TorraStreamQuickCodePlugin
 ) : BottomSheetDialogFragment() {
-    private val defaultWorkerUrl =
+    private val workerUrl =
         "https://torrastream-quickcode.tongbinhnguyen9090.workers.dev"
 
     private val localPrefs by lazy {
@@ -51,7 +51,6 @@ class QuickCodeFragment(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val workerInput = view.byName<EditText>("worker_url") ?: return
         val codeInput = view.byName<EditText>("quick_code") ?: return
         val providerSpinner = view.byName<Spinner>("provider_spinner") ?: return
         val applyButton = view.byName<Button>("apply_code") ?: return
@@ -65,30 +64,23 @@ class QuickCodeFragment(
             providers
         )
 
-        workerInput.setText(localPrefs.getString("worker_url", defaultWorkerUrl).orEmpty())
         val currentProvider = torraPrefs().getString("debrid_provider", "TorBox")
         providerSpinner.setSelection(providers.indexOf(currentProvider).coerceAtLeast(0))
 
         applyButton.setOnClickListener {
-            val endpoint = workerInput.text.toString().trim().trimEnd('/')
             val code = codeInput.text.toString().trim().lowercase()
             val provider = providers[providerSpinner.selectedItemPosition]
 
-            if (!endpoint.startsWith("https://")) {
-                status.text = "Worker URL phải bắt đầu bằng https://"
-                return@setOnClickListener
-            }
             if (!code.matches(Regex("[a-z0-9_-]{2,64}"))) {
                 status.text = "Mã chỉ dùng chữ thường, số, _ hoặc - (2–64 ký tự)."
                 return@setOnClickListener
             }
 
-            localPrefs.edit().putString("worker_url", endpoint).apply()
             setBusy(applyButton, providerSpinner, true)
             status.text = "Đang kiểm tra mã…"
 
             Thread {
-                val result = resolve(endpoint, code, provider)
+                val result = resolve(workerUrl, code, provider)
                 activity?.runOnUiThread {
                     if (!isAdded) return@runOnUiThread
                     setBusy(applyButton, providerSpinner, false)
@@ -97,6 +89,7 @@ class QuickCodeFragment(
                             .putString("debrid_provider", resolved.provider)
                             .putString("debrid_key", resolved.key)
                             .apply()
+                        localPrefs.edit().putBoolean("quickcode_managed", true).apply()
                         codeInput.text?.clear()
                         status.text = "Đã cấu hình ${resolved.provider} cho TorraStream và TorraStream-Anime. Hãy khởi động lại CloudStream."
                     }.onFailure { error ->
@@ -111,6 +104,7 @@ class QuickCodeFragment(
                 .remove("debrid_provider")
                 .remove("debrid_key")
                 .apply()
+            localPrefs.edit().putBoolean("quickcode_managed", false).apply()
             codeInput.text?.clear()
             status.text = "Đã xóa cấu hình debrid cục bộ của TorraStream."
         }
