@@ -78,7 +78,7 @@
         "iconUrl":  "https://www.google.com/s2/favicons?domain=uncutmaza.cc\u0026sz=%size%",
         "apiVersion":  1,
         "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize":  309578,
+        "fileSize":  309550,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -88,12 +88,12 @@
                         "Anime",
                         "Movie"
                     ],
-        "version":  43,
+        "version":  44,
         "internalName":  "ViStreamProvider",
         "description":  "Download FullHD, 2K, 4K from torrent and cloud driver",
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/ViStreamProvider.cs3",
         "name":  "ViStreamProvider",
-        "fileHash":  "sha256-b63442b3bc2d5c597864c4381a789c5339de05cb93e73f8a7508751935284469"
+        "fileHash":  "sha256-91cf78a9d5080dca227b282b2ebdf35e9fbbbcea388945ed6dadc0cca79ae62e"
     },
     {
         "iconUrl":  "https://www.stremio.com/website/favicon.ico",
