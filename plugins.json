@@ -200,5 +200,27 @@
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStreamQuickCode.cs3",
         "name":  "TorraStream QuickCode",
         "fileHash":  "sha256-ad37ca941849f74f847173460858cc01383d637d81b8fce74da6fe52dd99f97e"
+    },
+    {
+        "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
+        "fileSize":  32682,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "Movie",
+                        "TvSeries",
+                        "Anime",
+                        "Torrent"
+                    ],
+        "version":  1,
+        "internalName":  "TorBoxProvider",
+        "description":  "TorBox Việt - nội dung tiếng Việt, nguồn 4K/1080p dễ chọn và nhập mã nhanh dùng chung TorraStream",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorBoxProvider.cs3",
+        "name":  "TorBox Việt",
+        "fileHash":  "sha256-44ba2fa48fd6faef95d8863691f378151190c4daaac118e19435d2f966d7c2aa"
     }
 ]
