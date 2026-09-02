@@ -102,7 +102,8 @@ Sau mỗi lần build:
 ## 7. Kiểm tra trước khi phát hành bản này
 
 - Build Gradle hoàn tất với `BUILD SUCCESSFUL`.
-- Manifest gói: `pluginClassName=com.tnb88.torboxprovider.TorBoxPlugin`, `name=TorBoxProvider`, `version=1`.
+- Manifest gói: `pluginClassName=com.tnb88.torboxprovider.TorBoxPlugin`, `name=TorBoxProvider`, `version=2`.
+- Phản hồi “TB error / Invalid TorBox ApiKey/Token” của Torrentio được lọc bỏ, để CloudStream báo kiểm tra kích hoạt thay vì hiện một nguồn giả không phát được.
 - Gói chứa đầy đủ `classes.dex`, tài nguyên và layout cài đặt.
 - TMDB thử nghiệm trả danh sách và tiêu đề tiếng Việt.
 - Health check Worker trả `ok=true`, `version=2`.

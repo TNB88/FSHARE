@@ -185,6 +185,14 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         val candidates = buildList {
             for (index in 0 until streams.length()) {
                 val stream = streams.optJSONObject(index) ?: continue
+                val diagnostic = (stream.optString("name") + " " + stream.optString("title"))
+                    .lowercase(Locale.ROOT)
+                if (diagnostic.contains("error") ||
+                    diagnostic.contains("invalid") ||
+                    diagnostic.contains("api key") ||
+                    diagnostic.contains("apikey") ||
+                    diagnostic.contains("token!")
+                ) continue
                 val directUrl = stream.optString("url")
                 if (!directUrl.startsWith("http")) continue
                 add(StreamSource.from(stream, directUrl))
