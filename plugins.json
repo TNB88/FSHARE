@@ -137,33 +137,14 @@
         "fileHash":  "sha256-66576e2af0ecb77232ebf5f2c9e71c56724f63e58f3794ceead3be2bdbf30c83"
     },
     {
-        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/CinePro-icon.png",
-        "apiVersion":  1,
-        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  42800,
-        "status":  1,
-        "authors":  [
-                        "Bình Pro"
-                    ],
-        "tvTypes":  [
-                        "TvSeries",
-                        "Movie"
-                    ],
-        "version":  4,
-        "internalName":  "CineProProvider",
-        "description":  "Cine Pro - phim 1080p/4K, chọn nguồn và nhận phụ đề Cinehay nội bộ",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/CineProProvider.cs3",
-        "name":  "Cine Pro",
-        "fileHash":  "sha256-86d9012373e5bab56a50af3aa8be460afdb685d9b3f2c774cc3e46ac0e3b44ea"
-    },
-    {
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion":  1,
-        "repositoryUrl":  "https://github.com/phisher98/cloudstream-extensions-phisher",
-        "fileSize":  192127,
+        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
+        "fileSize":  199465,
         "status":  1,
         "authors":  [
-                        "Phisher98"
+                        "Phisher98",
+                        "Bình Pro"
                     ],
         "tvTypes":  [
                         "Movie",
@@ -172,12 +153,12 @@
                         "TvSeries",
                         "Anime"
                     ],
-        "version":  92,
+        "version":  93,
         "internalName":  "TorraStream",
-        "description":  "TorraStream v92 nguyên gốc - gồm TorraStream (TMDB) và TorraStream-Anime, hỗ trợ torrent 4K và Debrid",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStream.cs3",
+        "description":  "TorraStream v93 - mô tả/thông tin phim tiếng Việt, ưu tiên phụ đề Việt; giữ nguyên phim lẻ và cách chọn nguồn",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStream-v93.cs3",
         "name":  "TorraStream",
-        "fileHash":  "sha256-e6f6a4d9910dbc4b775d7ddafb6c3a262e31942a430d853b5a41a392205450f8"
+        "fileHash":  "sha256-d7c7416d57381beb62e0c2fca56ff5da42931d1600a92119e84736631e592a5f"
     },
     {
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
