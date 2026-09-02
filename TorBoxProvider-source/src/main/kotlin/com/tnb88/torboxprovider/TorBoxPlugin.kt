@@ -12,6 +12,8 @@ class TorBoxPlugin : Plugin() {
     override fun load(context: Context) {
         val appContext = context.applicationContext
         activity = context as? AppCompatActivity
+        TorBoxConfig.applyVietnameseSubtitlePreference(appContext)
+        VietnameseSubtitleProxy.start()
         registerMainAPI(TorBoxProvider(appContext))
 
         openSettings = {

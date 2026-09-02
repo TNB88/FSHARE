@@ -30,7 +30,8 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         val url = "$mainUrl/${request.data}${separator}api_key=$TMDB_KEY&language=vi-VN&include_adult=false&page=$page"
         val results = parseMediaList(JSONObject(app.get(url).text))
         return newHomePageResponse(
-            listOf(HomePageList(request.name, results, true)),
+            // false = thẻ poster dọc. true làm CloudStream dùng khung ngang và cắt poster.
+            listOf(HomePageList(request.name, results, false)),
             results.isNotEmpty()
         )
     }
@@ -60,7 +61,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
                 val posterPath = item.optString("poster_path")
                 val mediaUrl = "https://www.themoviedb.org/$type/$id"
                 add(newMovieSearchResponse(title, mediaUrl, if (type == "movie") TvType.Movie else TvType.TvSeries) {
-                    posterUrl = image(posterPath, "w500")
+                    posterUrl = image(posterPath, "w600_and_h900_bestv2")
                 })
             }
         }
@@ -85,7 +86,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         val title = detail.optString("title").ifBlank {
             detail.optString("name").ifBlank { "Chưa rõ tên" }
         }
-        val poster = image(detail.optString("poster_path"), "w500")
+        val poster = image(detail.optString("poster_path"), "w600_and_h900_bestv2")
         val backdrop = image(detail.optString("backdrop_path"), "w1280")
         val date = detail.optString("release_date").ifBlank { detail.optString("first_air_date") }
         val yearValue = date.take(4).toIntOrNull()
@@ -103,11 +104,16 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         }
 
         if (mediaType == "movie") {
-            return newMovieLoadResponse(
+            val chooseSourceEpisode = newEpisode(playbackData(imdb, 0, 0)) {
+                name = "Tập 1 • Bấm để chọn nguồn"
+                episode = 1
+                posterUrl = poster
+            }
+            return newTvSeriesLoadResponse(
                 title,
                 url,
                 TvType.Movie,
-                playbackData(imdb, 0, 0)
+                listOf(chooseSourceEpisode)
             ) {
                 plot = overview
                 posterUrl = poster
@@ -125,7 +131,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
                 val seasonNumber = season.optInt("season_number")
                 val episodeCount = season.optInt("episode_count")
                 if (seasonNumber <= 0 || episodeCount <= 0) continue
-                val seasonPoster = image(season.optString("poster_path"), "w500") ?: poster
+                val seasonPoster = image(season.optString("poster_path"), "w600_and_h900_bestv2") ?: poster
                 for (episodeNumber in 1..episodeCount) {
                     add(newEpisode(playbackData(imdb, seasonNumber, episodeNumber)) {
                         name = "Tập $episodeNumber"
@@ -172,7 +178,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
             throw IllegalStateException("Phim này chưa có mã IMDb nên chưa thể tìm nguồn TorBox.")
         }
 
-        loadSubtitles(imdb, season, episode, subtitleCallback)
+        loadSubtitles(imdb, season, episode, isCasting, subtitleCallback)
 
         val encodedKey = URLEncoder.encode(token, "UTF-8")
         val config = "sort=qualitysize%7Climit=25%7CTorBox=$encodedKey"
@@ -217,8 +223,39 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         imdb: String,
         season: Int,
         episode: Int,
+        isCasting: Boolean,
         callback: (SubtitleFile) -> Unit
     ) {
+        val seen = mutableSetOf<String>()
+
+        // Nguồn legacy có kho phụ đề Việt rộng hơn. Gói .gz được giải nén qua
+        // loopback proxy trên chính điện thoại nên trình phát nhận SRT trực tiếp.
+        if (!isCasting) {
+            runCatching {
+                val numericImdb = imdb.removePrefix("tt")
+                val searchPath = if (season > 0) {
+                    "episode-$episode/imdbid-$numericImdb/season-$season/sublanguageid-vie"
+                } else {
+                    "imdbid-$numericImdb/sublanguageid-vie"
+                }
+                val response = app.get(
+                    "$OPEN_SUBTITLES_LEGACY/search/$searchPath",
+                    headers = mapOf(
+                        "X-User-Agent" to "VLSub 0.10.3",
+                        "User-Agent" to "CloudStream TorBox Viet"
+                    )
+                )
+                val array = JSONArray(response.text)
+                for (index in 0 until minOf(array.length(), 15)) {
+                    val item = array.optJSONObject(index) ?: continue
+                    val remote = item.optString("SubDownloadLink")
+                    if (!remote.startsWith("https://") || !seen.add(remote)) continue
+                    val local = VietnameseSubtitleProxy.register(remote) ?: continue
+                    callback(newSubtitleFile("Vietnamese", local))
+                }
+            }
+        }
+
         runCatching {
             val path = if (season > 0) {
                 "subtitles/series/$imdb:$season:$episode.json"
@@ -229,9 +266,13 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
             for (index in 0 until minOf(array.length(), 40)) {
                 val item = array.optJSONObject(index) ?: continue
                 val subtitleUrl = item.optString("url")
-                if (!subtitleUrl.startsWith("http")) continue
-                val language = item.optString("lang").ifBlank { "Phụ đề" }
-                callback(SubtitleFile(language, subtitleUrl))
+                if (!subtitleUrl.startsWith("http") || !seen.add(subtitleUrl)) continue
+                val rawLanguage = item.optString("lang").ifBlank { "Phụ đề" }
+                val language = if (rawLanguage.equals("vi", true) ||
+                    rawLanguage.equals("vie", true) ||
+                    rawLanguage.contains("vietnam", true)
+                ) "Vietnamese" else rawLanguage
+                callback(newSubtitleFile(language, subtitleUrl))
             }
         }
     }
@@ -302,5 +343,6 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         const val TMDB_KEY = "1865f43a0549ca50d341dd9ab8b29f49"
         const val TORRENTIO = "https://torrentio.strem.fun"
         const val SUBTITLES = "https://opensubtitles-v3.strem.io"
+        const val OPEN_SUBTITLES_LEGACY = "https://rest.opensubtitles.org"
     }
 }

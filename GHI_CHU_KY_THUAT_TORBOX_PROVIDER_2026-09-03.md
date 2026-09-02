@@ -9,6 +9,7 @@ Hỗ trợ: SĐT & Zalo 0907 657 980
 ## 1. Thành phần được thêm mới
 
 - `TorBoxProvider.cs3`: gói cài trực tiếp trong CloudStream.
+- `TorBoxProvider-v3.cs3`: gói phát hành hiện tại, dùng tên theo phiên bản để tránh cache GitHub Raw.
 - `TorBoxProvider-source/`: toàn bộ mã nguồn để sửa và build lại.
 - Một mục `TorBox Việt` trong `plugins.json` của repository FSHARE.
 
@@ -22,7 +23,11 @@ Plugin cũ `TorraStream.cs3` và `TorraStreamQuickCode.cs3` vẫn được giữ
 4. Torrentio dùng cấu hình `TorBox=<API key>` và chỉ những mục có URL phát trực tiếp mới được đưa vào danh sách nguồn.
 5. Nguồn được sắp xếp theo độ phân giải rồi dung lượng: 4K trước, sau đó 1080p, 720p và nguồn không rõ chất lượng.
 6. Tên nguồn hiển thị theo dạng `TorBox • 4K • HDR • HEVC • 18 GB`, kèm tên release ở dòng dưới.
-7. Phụ đề được lấy từ addon OpenSubtitles Stremio, nếu có.
+7. Phụ đề được lấy từ addon OpenSubtitles Stremio và OpenSubtitles legacy tiếng Việt.
+8. Phụ đề legacy `.gz` được giải nén theo yêu cầu qua HTTP loopback `127.0.0.1`; không mở cổng ra mạng LAN.
+9. Plugin đặt ngôn ngữ tự chọn phụ đề của CloudStream thành `vi` khi tùy chọn `Tự động ưu tiên phụ đề tiếng Việt` được bật. Khi tắt, lựa chọn trước đó được khôi phục.
+10. Trang chủ dùng `HomePageList(..., isHorizontalImages=false)` và ảnh `w600_and_h900_bestv2`, để CloudStream tạo thẻ poster dọc thay vì cắt poster vào khung ngang.
+11. Phim lẻ trả về `TvSeriesLoadResponse` có đúng một tập tên `Tập 1 • Bấm để chọn nguồn`; đây là cách plugin tạo điểm bấm chọn nguồn mà không sửa giao diện lõi CloudStream.
 
 ## 3. Nhập mã nhanh và nơi lưu API key
 
@@ -72,7 +77,8 @@ Phản hồi hợp lệ cần có `provider=TorBox` và trường `key` dài t�
 - `TorBoxPlugin.kt`: đăng ký provider và mở màn cài đặt.
 - `TorBoxConfig.kt`: đọc, lưu, xóa cấu hình TorBox dùng chung.
 - `TorBoxProvider.kt`: TMDB, danh mục, tìm kiếm, chi tiết, tập phim, Torrentio, nguồn phát và phụ đề.
-- `TorBoxSettingsFragment.kt`: nhập mã nhanh, nhập API key và xóa cấu hình.
+- `VietnameseSubtitleProxy.kt`: giải nén OpenSubtitles `.gz` và phục vụ SRT tại loopback trên điện thoại.
+- `TorBoxSettingsFragment.kt`: nhập mã nhanh, nhập API key, tùy chọn phụ đề Việt và xóa cấu hình.
 - `torbox_settings.xml`: giao diện cài đặt.
 - `build.gradle.kts`: metadata và phụ thuộc của plugin.
 
@@ -95,7 +101,7 @@ Sau mỗi lần build:
 1. Tăng `version` trong `TorBoxProvider-source/build.gradle.kts`.
 2. Chép `.cs3` mới ra gốc repository.
 3. Cập nhật `version`, `fileSize` và `fileHash` trong `plugins.json`.
-   Khi thay gói ngay sau lúc phát hành, nên dùng tên file theo phiên bản như `TorBoxProvider-v2.cs3`; GitHub Raw có thể bỏ qua query string và vẫn trả gói cũ từ cache.
+   Khi thay gói ngay sau lúc phát hành, nên dùng tên file theo phiên bản như `TorBoxProvider-v3.cs3`; GitHub Raw có thể bỏ qua query string và vẫn trả gói cũ từ cache.
 4. Kiểm tra `plugins.json` đọc được bằng trình phân tích JSON.
 5. Mở `.cs3` như ZIP và kiểm tra có `manifest.json`, `classes.dex`, `resources.arsc` và layout cài đặt.
 6. Không commit bất kỳ API key người dùng hay nội dung secret Worker nào.
@@ -103,12 +109,15 @@ Sau mỗi lần build:
 ## 7. Kiểm tra trước khi phát hành bản này
 
 - Build Gradle hoàn tất với `BUILD SUCCESSFUL`.
-- Manifest gói: `pluginClassName=com.tnb88.torboxprovider.TorBoxPlugin`, `name=TorBoxProvider`, `version=2`.
+- Manifest gói: `pluginClassName=com.tnb88.torboxprovider.TorBoxPlugin`, `name=TorBoxProvider`, `version=3`.
 - Phản hồi “TB error / Invalid TorBox ApiKey/Token” của Torrentio được lọc bỏ, để CloudStream báo kiểm tra kích hoạt thay vì hiện một nguồn giả không phát được.
+- Thử OpenSubtitles legacy với một phim mẫu trả 9 phụ đề Việt; file `.gz` giải nén thành SRT hợp lệ.
+- Manifest CloudStream cho phép `usesCleartextTraffic=true`, cần thiết để trình phát đọc SRT từ loopback `http://127.0.0.1`.
 - Gói chứa đầy đủ `classes.dex`, tài nguyên và layout cài đặt.
 - TMDB thử nghiệm trả danh sách và tiêu đề tiếng Việt.
 - Health check Worker trả `ok=true`, `version=2`.
 - SHA-256 và dung lượng trong `plugins.json` khớp với file `.cs3`.
+- Gói v3 có dung lượng `41659` byte và SHA-256 `726109fdb7333350377ddcc76b50fedb3ef78f8a72647834fab4db2a081f235b`.
 
 ## 8. Lưu ý vận hành
 

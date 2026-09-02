@@ -9,6 +9,11 @@ internal object TorBoxConfig {
     const val API_KEY = "debrid_key"
     const val PROVIDER_NAME = "TorBox"
     const val QUICK_CODE_MANAGED = "quickcode_managed"
+    const val AUTO_VIETNAMESE_SUBTITLE = "auto_vietnamese_subtitle"
+
+    private const val APP_DATA_PREFS = "rebuild_preference"
+    private const val APP_AUTO_SUBTITLE_KEY = "subs_auto_select"
+    private const val PREVIOUS_AUTO_SUBTITLE = "previous_auto_subtitle"
 
     private const val QUICK_CODE_BASE =
         "https://torrastream-quickcode.tongbinhnguyen9090.workers.dev"
@@ -42,6 +47,35 @@ internal object TorBoxConfig {
         }
         context.getSharedPreferences(LOCAL_PREFS, Context.MODE_PRIVATE)
             .edit().remove(QUICK_CODE_MANAGED).apply()
+    }
+
+    fun autoVietnameseSubtitle(context: Context): Boolean =
+        context.getSharedPreferences(LOCAL_PREFS, Context.MODE_PRIVATE)
+            .getBoolean(AUTO_VIETNAMESE_SUBTITLE, true)
+
+    fun setAutoVietnameseSubtitle(context: Context, enabled: Boolean) {
+        context.getSharedPreferences(LOCAL_PREFS, Context.MODE_PRIVATE)
+            .edit().putBoolean(AUTO_VIETNAMESE_SUBTITLE, enabled).apply()
+        applyVietnameseSubtitlePreference(context)
+    }
+
+    fun applyVietnameseSubtitlePreference(context: Context) {
+        val local = context.getSharedPreferences(LOCAL_PREFS, Context.MODE_PRIVATE)
+        val global = context.getSharedPreferences(APP_DATA_PREFS, Context.MODE_PRIVATE)
+        if (autoVietnameseSubtitle(context)) {
+            if (!local.contains(PREVIOUS_AUTO_SUBTITLE)) {
+                local.edit().putString(
+                    PREVIOUS_AUTO_SUBTITLE,
+                    global.getString(APP_AUTO_SUBTITLE_KEY, null) ?: "\"en\""
+                ).apply()
+            }
+            // CloudStream DataStore serializes string values as JSON literals.
+            global.edit().putString(APP_AUTO_SUBTITLE_KEY, "\"vi\"").apply()
+        } else if (local.contains(PREVIOUS_AUTO_SUBTITLE)) {
+            val previous = local.getString(PREVIOUS_AUTO_SUBTITLE, "\"en\"") ?: "\"en\""
+            global.edit().putString(APP_AUTO_SUBTITLE_KEY, previous).apply()
+            local.edit().remove(PREVIOUS_AUTO_SUBTITLE).apply()
+        }
     }
 
     fun quickCodeUrl(): String = "$QUICK_CODE_BASE/v1/resolve"

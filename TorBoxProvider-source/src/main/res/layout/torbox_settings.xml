@@ -78,6 +78,14 @@
             android:layout_marginTop="8dp"
             android:text="Xóa cấu hình TorBox trên máy" />
 
+        <CheckBox
+            android:id="@+id/auto_vietnamese_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="Tự động ưu tiên phụ đề tiếng Việt" />
+
         <TextView
             android:id="@+id/status"
             android:layout_width="match_parent"

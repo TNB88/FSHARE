@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -45,8 +46,18 @@ class TorBoxSettingsFragment(
         val applyCode = view.byName<Button>("apply_code") ?: return
         val saveApi = view.byName<Button>("save_api") ?: return
         val clear = view.byName<Button>("clear_torbox") ?: return
+        val autoVietnamese = view.byName<CheckBox>("auto_vietnamese_subtitle") ?: return
         val status = view.byName<TextView>("status") ?: return
 
+        autoVietnamese.isChecked = TorBoxConfig.autoVietnameseSubtitle(requireContext())
+        autoVietnamese.setOnCheckedChangeListener { _, enabled ->
+            TorBoxConfig.setAutoVietnameseSubtitle(requireContext(), enabled)
+            status.text = if (enabled) {
+                "Đã ưu tiên và tự chọn phụ đề tiếng Việt trong trình phát."
+            } else {
+                "Đã trả cài đặt phụ đề tự động về lựa chọn trước đó."
+            }
+        }
         refreshStatus(status)
 
         applyCode.setOnClickListener {
