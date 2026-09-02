@@ -95,6 +95,7 @@ Sau mỗi lần build:
 1. Tăng `version` trong `TorBoxProvider-source/build.gradle.kts`.
 2. Chép `.cs3` mới ra gốc repository.
 3. Cập nhật `version`, `fileSize` và `fileHash` trong `plugins.json`.
+   URL tải `.cs3` nên có tham số phiên bản tương ứng, ví dụ `?v=2`, để tránh GitHub Raw trả gói cũ từ cache ngay sau khi phát hành.
 4. Kiểm tra `plugins.json` đọc được bằng trình phân tích JSON.
 5. Mở `.cs3` như ZIP và kiểm tra có `manifest.json`, `classes.dex`, `resources.arsc` và layout cài đặt.
 6. Không commit bất kỳ API key người dùng hay nội dung secret Worker nào.

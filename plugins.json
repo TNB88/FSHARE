@@ -219,7 +219,7 @@
         "version":  2,
         "internalName":  "TorBoxProvider",
         "description":  "TorBox Việt - nội dung tiếng Việt, nguồn 4K/1080p dễ chọn và nhập mã nhanh dùng chung TorraStream",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorBoxProvider.cs3",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorBoxProvider.cs3?v=2",
         "name":  "TorBox Việt",
         "fileHash":  "sha256-774063ede196a107a31464aae19a6d37205e92ea9be18c526dca0460c7e607b3"
     }
