@@ -140,7 +140,7 @@
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  199465,
+        "fileSize":  198705,
         "status":  1,
         "authors":  [
                         "Phisher98",
@@ -153,12 +153,12 @@
                         "TvSeries",
                         "Anime"
                     ],
-        "version":  93,
+        "version":  94,
         "internalName":  "TorraStream",
-        "description":  "TorraStream v93 - mô tả/thông tin phim tiếng Việt, ưu tiên phụ đề Việt; giữ nguyên phim lẻ và cách chọn nguồn",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStream-v93.cs3",
+        "description":  "TorraStream v94 - sửa TorraStream-Anime cho PhimRạp 4.8.0, mô tả tiếng Việt và ưu tiên phụ đề Việt",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorraStream-v94.cs3",
         "name":  "TorraStream",
-        "fileHash":  "sha256-d7c7416d57381beb62e0c2fca56ff5da42931d1600a92119e84736631e592a5f"
+        "fileHash":  "sha256-3adefcbf330410964aef603e4531d56e2a486cf39d54f0ba6b7abc2b64d8406a"
     },
     {
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
