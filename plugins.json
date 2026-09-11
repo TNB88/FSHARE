@@ -203,5 +203,24 @@
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorBoxProvider-v3.cs3",
         "name":  "TorBox Việt",
         "fileHash":  "sha256-726109fdb7333350377ddcc76b50fedb3ef78f8a72647834fab4db2a081f235b"
+    },
+    {
+        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/clipdramapro-icon.png",
+        "apiVersion":  1,
+        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
+        "fileSize":  33367,
+        "status":  1,
+        "authors":  [
+                        "Bình Pro"
+                    ],
+        "tvTypes":  [
+                        "TvSeries"
+                    ],
+        "version":  1,
+        "internalName":  "ClipDramaProProvider",
+        "description":  "Clip Drama Pro - phim ngắn ReelShort, danh sách tập và tìm kiếm tiếng Việt",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/ClipDramaProProvider.cs3",
+        "name":  "Clip Drama Pro",
+        "fileHash":  "sha256-531244ff8da32e984a11e4a5243cebd7b2640facb48e4f3db9998393f4ebfc90"
     }
 ]
