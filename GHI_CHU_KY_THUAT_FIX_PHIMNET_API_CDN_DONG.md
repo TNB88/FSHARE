@@ -191,3 +191,16 @@ Ngày cập nhật: 26/10/2026.
 - Gói build chứa đúng `manifest.json` và `classes.dex`.
 - Kích thước: `45920` byte.
 - SHA-256: `D1D319A5B163608C6EB6D0A85F7B1D3C316C3798D495AA1401CD0DED46106B5D`.
+
+## 12. CloudStream PhimNetProvider v9 — sửa ba hàng cuối không hiện phim
+
+Ngày cập nhật: 26/10/2026.
+
+- Hiện tượng: tiêu đề `Phim Lẻ`, `Phim Kinh Dị`, `Phim Hành Động` vẫn hiện nhưng danh sách phim trống; `Phim mới cập nhật` và `Phim Bộ` tải được.
+- API không mất dữ liệu: kiểm tra trực tiếp cho thấy `movies`, thể loại kinh dị ID `15` và hành động ID `1` đều trả HTTP 200 với 24 phim.
+- Nguyên nhân: v8 dùng `apiRequestMutex` để tuần tự hóa toàn bộ yêu cầu nội dung. CloudStream gọi năm hàng trang chủ cùng lúc nên ba yêu cầu cuối chờ khóa quá lâu và bị hủy trước khi chạy.
+- Bỏ khóa tuần tự ở `apiGet`, cho phép các yêu cầu nội dung chạy song song. Vẫn giữ `configMutex` để việc tải/cập nhật cấu hình API/CDN động an toàn.
+- Giữ nguyên retry HTTP 403/429/5xx, giao diện, tên danh mục, parser chi tiết và thuật toán phát phim.
+- Nâng plugin từ version 8 lên 9; tăng `repo.json` lên manifest 3 và đổi URL danh mục thành `plugins.json?v=9` để tránh cache metadata cũ.
+- Kích thước: `44974` byte.
+- SHA-256: `A87AAF518A5E7D5EE61A855C5185E5C944213131DCDCB8E1B20139A11124D767`.
