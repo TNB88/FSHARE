@@ -1,0 +1,8 @@
+{
+  "name": "Vietnamese Extension v9",
+  "description": "PhimNet v9 - sua cac hang trang chu bi trong",
+  "manifestVersion": 3,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/TNB88/FSHARE/main/plugins.json?v=9"
+  ]
+}
