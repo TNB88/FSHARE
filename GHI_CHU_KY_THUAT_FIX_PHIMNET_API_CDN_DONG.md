@@ -176,3 +176,18 @@ Thông tin file đã phát hành:
 - Không ghi đè các bản vá phát/tua/reconnect đã có từ Kodi 1.0.11–1.0.13.
 - Không phát hành nếu ZIP sai thư mục gốc, `addons.xml.md5` chưa cập nhật hoặc
   `plugins.json` không khớp hash/kích thước file thực tế.
+
+## 11. CloudStream PhimNetProvider v8 — sửa danh mục tải song song
+
+Ngày cập nhật: 26/10/2026.
+
+- Hiện tượng: `Phim mới cập nhật`, `Phim Lẻ`, `Phim Bộ` và `Phim Kinh Dị` không có nội dung; máy chủ cũ trả HTTP 403.
+- Nguyên nhân: CloudStream gọi nhiều hàng trang chủ đồng thời, trong khi provider đặt `configLoaded = true` trước khi tải xong cấu hình động. Các coroutine còn lại bỏ qua bước chờ và gọi nhầm API dự phòng cũ.
+- Dùng `Mutex` để mọi yêu cầu chờ cùng một lần tải cấu hình hoàn tất.
+- Đổi API/CDN dự phòng sang `api.phim4k.space` và `svatv.cryboiz.workers.dev`, nhưng vẫn ưu tiên cấu hình động từ Worker và GitHub.
+- Tuần tự hóa các lệnh gọi API trang chủ và thử lại tối đa ba lần với HTTP 403, 429 hoặc 5xx; HTTP 403 sẽ buộc tải lại cấu hình động.
+- Giữ nguyên tên danh mục, giao diện, parser chi tiết phim và thuật toán ký link phát.
+- Nâng plugin từ version 7 lên 8.
+- Gói build chứa đúng `manifest.json` và `classes.dex`.
+- Kích thước: `45925` byte.
+- SHA-256: `44C6C522BDEB326181617F77F92929C12B17E3040C91E3C436F3AEBC30303C86`.
