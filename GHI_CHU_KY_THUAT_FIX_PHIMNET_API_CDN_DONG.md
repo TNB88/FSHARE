@@ -189,5 +189,5 @@ Ngày cập nhật: 26/10/2026.
 - Giữ nguyên tên danh mục, giao diện, parser chi tiết phim và thuật toán ký link phát.
 - Nâng plugin từ version 7 lên 8.
 - Gói build chứa đúng `manifest.json` và `classes.dex`.
-- Kích thước: `45925` byte.
-- SHA-256: `44C6C522BDEB326181617F77F92929C12B17E3040C91E3C436F3AEBC30303C86`.
+- Kích thước: `45920` byte.
+- SHA-256: `D1D319A5B163608C6EB6D0A85F7B1D3C316C3798D495AA1401CD0DED46106B5D`.
