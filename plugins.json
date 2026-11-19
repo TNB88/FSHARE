@@ -16,27 +16,6 @@
         "fileHash":  "sha256-df7a5993758b54011d707df0eb3791f73dad249d6a213574c87095014bb1b957"
     },
     {
-        "iconUrl":  "https://play-lh.googleusercontent.com/TOTj0uMWp7cXkjXDXkcTZnPigUmpLRRiH956lHRJxStlY7ucxmtwMs_Kr2wOWYm0fSY=w240-h480-rw",
-        "apiVersion":  1,
-        "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
-        "fileSize":  176598,
-        "status":  1,
-        "authors":  [
-                        "Bình Pro"
-                    ],
-        "tvTypes":  [
-                        "Anime",
-                        "TvSeries",
-                        "Movie"
-                    ],
-        "version":  59,
-        "internalName":  "FshareProvider",
-        "description":  "Download FullHD, 2K, 4K with Fshare Vip account",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/FshareProvider.cs3",
-        "name":  "FshareProvider",
-        "fileHash":  "sha256-e4503aa234d5020f2336ae445f74b52f7ce898b390a288eef6cc6e2b532b91b9"
-    },
-    {
         "iconUrl":  "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg",
         "apiVersion":  1,
         "repositoryUrl":  "https://gitlab.com/tearrs/cloudstream-vietnamese",
@@ -117,26 +96,6 @@
         "fileHash":  "sha256-4c76696afe6d13380396ffa27ab010f7f524724754dd64effdca9bf265c1f52c"
     },
     {
-        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/phimnet-icon.png",
-        "apiVersion":  1,
-        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  44974,
-        "status":  1,
-        "authors":  [
-                        "Bình Pro"
-                    ],
-        "tvTypes":  [
-                        "TvSeries",
-                        "Movie"
-                    ],
-        "version":  9,
-        "internalName":  "PhimNetProvider",
-        "description":  "Server Nét gốc - chọn riêng 1080p/4K, HDR/DV và dung lượng GB",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/PhimNetProvider.cs3",
-        "name":  "PhimNetProvider",
-        "fileHash":  "sha256-a87aaf518a5e7d5ee61a855c5185e5c944213131dcdcb8e1b20139a11124d767"
-    },
-    {
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
@@ -203,24 +162,5 @@
         "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorBoxProvider-v3.cs3",
         "name":  "TorBox Việt",
         "fileHash":  "sha256-726109fdb7333350377ddcc76b50fedb3ef78f8a72647834fab4db2a081f235b"
-    },
-    {
-        "iconUrl":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/clipdramapro-icon.png",
-        "apiVersion":  1,
-        "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  33367,
-        "status":  1,
-        "authors":  [
-                        "Bình Pro"
-                    ],
-        "tvTypes":  [
-                        "TvSeries"
-                    ],
-        "version":  1,
-        "internalName":  "ClipDramaProProvider",
-        "description":  "Clip Drama Pro - phim ngắn ReelShort, danh sách tập và tìm kiếm tiếng Việt",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/ClipDramaProProvider.cs3",
-        "name":  "Clip Drama Pro",
-        "fileHash":  "sha256-531244ff8da32e984a11e4a5243cebd7b2640facb48e4f3db9998393f4ebfc90"
     }
 ]
