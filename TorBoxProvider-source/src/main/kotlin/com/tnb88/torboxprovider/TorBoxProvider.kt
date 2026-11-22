@@ -181,7 +181,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
         loadSubtitles(imdb, season, episode, isCasting, subtitleCallback)
 
         val encodedKey = URLEncoder.encode(token, "UTF-8")
-        val config = "sort=qualitysize%7Climit=25%7CTorBox=$encodedKey"
+        val config = "sort=qualitysize%7CTorBox=$encodedKey"
         val kind = if (season > 0) "series" else "movie"
         val mediaId = if (season > 0) "$imdb:$season:$episode" else imdb
         val endpoint = "$TORRENTIO/$config/stream/$kind/$mediaId.json"
@@ -205,7 +205,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
             }
         }.sortedWith(compareByDescending<StreamSource> { it.quality }.thenByDescending { it.sizeBytes })
 
-        candidates.take(25).forEach { source ->
+        candidates.forEach { source ->
             callback(newExtractorLink(name, source.label, source.url) {
                 quality = source.quality
                 referer = ""
@@ -263,7 +263,7 @@ class TorBoxProvider(private val context: Context) : MainAPI() {
                 "subtitles/movie/$imdb.json"
             }
             val array = JSONObject(app.get("$SUBTITLES/$path").text).optJSONArray("subtitles") ?: JSONArray()
-            for (index in 0 until minOf(array.length(), 40)) {
+            for (index in 0 until array.length()) {
                 val item = array.optJSONObject(index) ?: continue
                 val subtitleUrl = item.optString("url")
                 if (!subtitleUrl.startsWith("http") || !seen.add(subtitleUrl)) continue

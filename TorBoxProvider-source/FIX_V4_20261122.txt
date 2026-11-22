@@ -1,0 +1,37 @@
+TorBox Viet v4 - 2026-11-22
+
+Changes:
+1. Remove limit=25 from the Torrentio configuration sent by the provider.
+2. Remove candidates.take(25) in the source callback list. Preserve the existing
+   invalid-source filtering and quality/size sorting. Display every valid source
+   returned by the service; this cannot create sources the service does not have.
+3. Read the entire fallback subtitle response rather than its first 40 entries.
+   Keep language normalization and the existing Vietnamese auto-select preference.
+   Keep the legacy Vietnamese subtitle provider and loopback SRT proxy unchanged.
+
+Diagnostic evidence from TV box 192.168.1.9:
+- For MobLand S01E01 (IMDb tt31510819), the public fallback subtitle endpoint
+  returned 79 entries. The two Vietnamese entries were at positions 50 and 51,
+  outside the old 40-result limit.
+- The selected legacy Vietnamese subtitle downloaded successfully as SRT and
+  contained 1051 timed cues. Thus the current check does NOT prove that the APK
+  is globally incapable of displaying Vietnamese subtitles. Other films, timing
+  offsets, unavailable tracks and player settings still need individual checks.
+
+Build and preservation:
+- Source edits are in TorBoxProvider.kt; source version is 4.
+- The released v4 binary is based on the existing v3 resource-bearing package.
+- Only the three corresponding constants and the manifest version are patched.
+  Smali assembly succeeds; other classes and packaged resources are preserved.
+- The source-count and subtitle-count constants in the patched dex are the
+  maximum nonnegative Int value, so min/take do not truncate a Java List/JSONArray.
+- No API keys, login tokens, signing keys, activation code or shared preferences
+  are modified. Do not uninstall Phim Rap to apply this plugin update.
+- Keep TorBoxProvider-v3.cs3 and prior historical binaries for recovery.
+
+Verification scope:
+- Resource entries in v3 and v4 compared byte-for-byte via SHA-256.
+- Confirm public response entries 50/51 are Vietnamese and no longer excluded.
+- Confirm source request and local emission no longer impose the number 25.
+- Device playback and the CC menu need to be tested after v4 is loaded. This fix
+  does not guarantee perfect subtitle timing or a Vietnamese track for every film.
