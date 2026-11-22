@@ -145,7 +145,7 @@
         "iconUrl":  "https://torrentio.strem.fun/images/logo_v1.png",
         "apiVersion":  1,
         "repositoryUrl":  "https://github.com/TNB88/FSHARE",
-        "fileSize":  41659,
+        "fileSize":  42764,
         "status":  1,
         "authors":  [
                         "Bình Pro"
@@ -156,11 +156,11 @@
                         "Anime",
                         "Torrent"
                     ],
-        "version":  3,
+        "version":  4,
         "internalName":  "TorBoxProvider",
         "description":  "TorBox Việt - poster dọc, tự ưu tiên phụ đề Việt, bấm Tập để chọn nguồn 4K/1080p và nhập mã nhanh",
-        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/refs/heads/main/TorBoxProvider-v3.cs3",
+        "url":  "https://raw.githubusercontent.com/TNB88/FSHARE/cb10957d24d573abdfc537f3ad44b6b0741aa227/TorBoxProvider-v4.cs3",
         "name":  "TorBox Việt",
-        "fileHash":  "sha256-726109fdb7333350377ddcc76b50fedb3ef78f8a72647834fab4db2a081f235b"
+        "fileHash":  "sha256-4a306f7a5faed7a626b1e14e854b6c618d232d66bb6f202b76c381b11c7d06b7"
     }
 ]

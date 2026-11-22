@@ -3,6 +3,6 @@
     "description": "https://t.me/cloudstream_extension_vn",
     "manifestVersion": 3,
     "pluginLists": [
-      "https://raw.githubusercontent.com/TNB88/FSHARE/main/plugins.json?v=9"
+      "https://raw.githubusercontent.com/TNB88/FSHARE/main/plugins.json?manifest=20261122-torbox4"
     ]
 }
